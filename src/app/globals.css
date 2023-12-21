@@ -13,6 +13,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden; /* Ensure the video doesn't overflow the body */
+  background-color: black;
 }
 
 video {
@@ -68,3 +69,15 @@ p {
 }
 
 /* Add your own styles or adjust as needed */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate 6s linear infinite;
+}
