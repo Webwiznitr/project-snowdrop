@@ -18,7 +18,7 @@ const Home = () => {
         />
         <h1 className="text-3xl text-center">Hold on, We are still building.</h1>
         <h1 className="text-xl text-center">Crafting With 💝 Team Webwiz.</h1>
-        <div className=" mt-32 mx-auto text-center">
+        <div className=" mt-20 mx-auto text-center">
           <Link
             className="text-lg underline text-center text-white"
             href={"/inductions"}
