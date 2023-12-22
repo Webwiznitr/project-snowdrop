@@ -303,13 +303,14 @@ const Home = () => {
           </div>
           <div className="mb-4 mx-2">
             <button
-              type="submit"
+              // type="submit"
               className="bg-black border-white border  text-white py-2 px-4 rounded"
-              disabled={isLoading} // Disable the button during loading
-              // disabled="true"
+              // disabled={isLoading} // Disable the button during loading
+              disabled="true"
               onClick={handleFormSubmit}
             >
-              {isLoading ? "Submitting..." : "Submission Starts Soon..."}
+              {/* {isLoading ? "Submitting..." : "Submit"} */}
+              Submission Starts Soon...
             </button>
           </div>
         </form>
