@@ -124,7 +124,7 @@ const Home = () => {
 
       {/* Left side with image */}
       <div className="sm:w-1/2 relative flex-1">
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -133,15 +133,22 @@ const Home = () => {
         >
           <source src="/Astronot3.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <img src="https://sacnitrkl.blr1.cdn.digitaloceanspaces.com/WW-Miscellaneous/Ww-Induction-Image.webp"
+         alt="" 
+         className='object-cover w-full h-full absolute'
+         />
       </div>
       {/* Right side with login form */}
-      <div className="flex-1 bg-slate-400 p-8 overflow-y-auto relative ">
-        <h2 className="text-2xl font-bold mb-4">Webwiz NITRKL</h2>
+      <div className="flex-1 bg-webwizone p-8 overflow-y-auto relative ">
+        <h2 className="text-2xl font-bold mb-4 text-white">Webwiz Induction Task Submission</h2>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
+
+          <div className='flex'>
+
+          <div className="mb-4 mx-2 w-1/2">
+            <label htmlFor="name" className="block text-white font-normal mb-2">
               Name
             </label>
             <input
@@ -150,12 +157,12 @@ const Home = () => {
               name="name"
               value={name}
               onChange={handleNameChange}
-              className="border rounded w-full py-2 px-3"
+              className="border rounded w-full py-2 px-3 bg-black text-white"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="phoneNumber" className="block text-gray-700 font-bold mb-2">
+          <div className="mb-4 mx-2 w-1/2">
+            <label htmlFor="phoneNumber" className="block text-white font-normal mb-2">
               Phone Number
             </label>
             <input
@@ -164,12 +171,15 @@ const Home = () => {
               name="phoneNumber"
               value={phoneNumber}
               onChange={handlePhoneNumberChange}
-              className="border rounded w-full py-2 px-3"
+              className="border rounded w-full py-2 px-3 bg-black text-white"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
+          </div>
+
+          <div className='flex'>
+          <div className="mb-4 mx-2 w-1/2">
+            <label htmlFor="email" className="block text-white font-normal mb-2">
               Email
             </label>
             <input
@@ -178,12 +188,12 @@ const Home = () => {
               name="email"
               value={email}
               onChange={handleEmailChange}
-              className="border rounded w-full py-2 px-3"
+              className="border rounded w-full py-2 px-3 bg-black text-white"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="rollNumber" className="block text-gray-700 font-bold mb-2">
+          <div className="mb-4 mx-2 w-1/2">
+            <label htmlFor="rollNumber" className="block text-white font-normal mb-2">
               Roll Number
             </label>
             <input
@@ -192,12 +202,15 @@ const Home = () => {
               name="rollNumber"
               value={rollNumber}
               onChange={handleRollNumberChange}
-              className="border rounded w-full py-2 px-3"
+              className="border rounded w-full py-2 px-3 bg-black text-white"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="githubRepoLink" className="block text-gray-700 font-bold mb-2">
+          </div>
+
+          <div className='flex'>
+          <div className="mb-4 mx-2 w-1/2">
+            <label htmlFor="githubRepoLink" className="block text-white font-normal mb-2">
               GitHub Repo Link
             </label>
             <input
@@ -206,12 +219,12 @@ const Home = () => {
               name="githubRepoLink"
               value={githubRepoLink}
               onChange={handleGithubRepoLinkChange}
-              className="border rounded w-full py-2 px-3"
+              className="border rounded w-full py-2 px-3 bg-black text-white"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="deployedLink" className="block text-gray-700 font-bold mb-2">
+          <div className="mb-4 mx-2 w-1/2">
+            <label htmlFor="deployedLink" className="block text-white font-normal mb-2">
               Deployed Link
             </label>
             <input
@@ -220,12 +233,14 @@ const Home = () => {
               name="deployedLink"
               value={deployedLink}
               onChange={handleDeployedLinkChange}
-              className="border rounded w-full py-2 px-3"
+              className="border rounded w-full py-2 px-3 bg-black text-white"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="reasonToJoin" className="block text-gray-700 font-bold mb-2">
+          </div>
+
+          <div className="mb-4 mx-2">
+            <label htmlFor="reasonToJoin" className="block text-white font-normal mb-2">
               Why do you want to join in the club? (Max 500 characters)
             </label>
             <textarea
@@ -233,19 +248,20 @@ const Home = () => {
               name="reasonToJoin"
               value={reasonToJoin}
               onChange={handleReasonToJoinChange}
-              className="border rounded w-full py-2 px-3"
+              className="border rounded w-full py-2 px-3 bg-black text-white"
               rows="4"
               maxLength="500"
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 mx-2">
           <button
               type="submit"
-              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
-              disabled={isLoading} // Disable the button during loading
+              className="bg-black border-white border  text-white py-2 px-4 rounded"
+              // disabled={isLoading} // Disable the button during loading
+              disabled="true"
             >
-              {isLoading ? 'Submitting...' : 'Submit'}
+              {isLoading ? 'Submitting...' : 'Submission Starts Soon...'}
             </button>
           </div>
         </form>
