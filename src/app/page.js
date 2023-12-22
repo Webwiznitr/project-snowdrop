@@ -26,6 +26,14 @@ const Home = () => {
           >
             Looking for Induction Task? Click Here!
           </Link>
+          <br />
+          <Link
+            className="text-lg underline text-center text-white"
+            href={"/induction-task"}
+            target="_blank"
+          >
+            Submit Task Here!
+          </Link>
         </div>
       </div>
     </div>
