@@ -69,6 +69,12 @@ p {
 }
 
 /* Add your own styles or adjust as needed */
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 @keyframes rotate {
   from {
     transform: rotate(0deg);

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <>
+    <div className="home1">
       <video autoPlay loop muted className="opacity-90">
         <source
           src="https://sacnitrkl.blr1.cdn.digitaloceanspaces.com/WW-Miscellaneous/Snow_2_loop.mp4"
@@ -28,7 +28,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
