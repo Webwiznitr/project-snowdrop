@@ -117,7 +117,6 @@ const Home = () => {
         })
         .finally(() => {
           setIsLoading(false);
-          alert("Form submitted successfully!");
           setName("");
           setPhoneNumber("");
           setEmail("");
@@ -125,6 +124,7 @@ const Home = () => {
           setGithubRepoLink("");
           setDeployedLink("");
           setReasonToJoin("");
+          alert("Form submitted successfully!");
         });
     }
   };
@@ -305,12 +305,12 @@ const Home = () => {
             <button
               // type="submit"
               className="bg-black border-white border  text-white py-2 px-4 rounded"
-              // disabled={isLoading} // Disable the button during loading
-              disabled="true"
+              disabled={isLoading} // Disable the button during loading
+              // disabled="true"
               onClick={handleFormSubmit}
             >
-              {/* {isLoading ? "Submitting..." : "Submit"} */}
-              Submission Starts Soon...
+              {isLoading ? "Submitting..." : "Submit"}
+              {/* Submission Starts Soon... */}
             </button>
           </div>
         </form>
