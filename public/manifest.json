@@ -1,0 +1,32 @@
+{
+    "theme_color": "#252525",
+    "background_color": "#d472e8",
+    "display": "minimal-ui",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Webwiz",
+    "short_name": "Webwiz",
+    "description": "Webwiz is a community of web developers and designers. We share our knowledge and experience to help each other grow. We're a community of developers where everyone is valued.",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
