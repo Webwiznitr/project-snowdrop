@@ -1,10 +1,38 @@
 /* styles/globals.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
 
 body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/*body {
   
   margin: 0;
   padding: 0;
@@ -12,7 +40,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden; /* Ensure the video doesn't overflow the body */
+  overflow: hidden; 
   background-color: black;
 }
 
@@ -23,7 +51,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-   /* Adjust as needed */
+   
   z-index: -1;
   
 }
@@ -45,10 +73,10 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px; /* Adjust as needed */
-  background: rgba(0, 0, 0, 0.2); /* Translucent box color */
+  padding: 20px; 
+  background: rgba(0, 0, 0, 0.2);
   z-index: -1;
-  border-radius: 8px; /* Adjust as needed */
+  border-radius: 8px; 
   font-weight: 700;
   
 }
@@ -68,7 +96,7 @@ p {
 
 }
 
-/* Add your own styles or adjust as needed */
+
 .home{
   display: flex;
   align-items: center;
@@ -86,4 +114,4 @@ p {
 
 .rotating {
   animation: rotate 6s linear infinite;
-}
+}*/
