@@ -13,21 +13,21 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFormSubmit = async (e) => {
-    const res = await fetch("/api/formInduction", {
-      method: "POST",
-      body: JSON.stringify({
-        name: name,
-        phoneNumber: phoneNumber,
-        email: email,
-        rollNumber: rollNumber,
-        githubRepoLink: githubRepoLink,
-        reasonToJoin: reasonToJoin,
-        deployedLink: deployedLink,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    // const res = await fetch("/api/formInduction", {
+    //   method: "POST",
+    //   body: JSON.stringify({
+    //     name: name,
+    //     phoneNumber: phoneNumber,
+    //     email: email,
+    //     rollNumber: rollNumber,
+    //     githubRepoLink: githubRepoLink,
+    //     reasonToJoin: reasonToJoin,
+    //     deployedLink: deployedLink,
+    //   }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
   };
 
   const handleReasonToJoinChange = (e) => {
