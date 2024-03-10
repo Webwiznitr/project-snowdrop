@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 export function BentoGridDemo() {
   return (
-    <>
+    <div id="projects">
     <h2 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 relative z-20 mb-16">
         Projects
       </h2>
@@ -29,7 +29,7 @@ export function BentoGridDemo() {
         />
       ))}
     </BentoGrid>
-    </>
+    </div>
   );
 }
 const Skeleton = () => (

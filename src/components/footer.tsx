@@ -18,9 +18,9 @@ export function SparklesPreviewFooter() {
       </div>
      
       <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 relative z-20">
-        Contact Us
+        Coming Soon
       </h1>
-      <Link className="mt-4 relative z-20" href="mailto:support@teamwebwiz.dev" target="_blank">
+      <Link className="mt-4 relative z-20 font-mono" href="mailto:support@teamwebwiz.dev" target="_blank">
       support@teamwebwiz.dev
       </Link>
 
