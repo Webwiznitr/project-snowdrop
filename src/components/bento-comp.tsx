@@ -14,10 +14,10 @@ import Image from "next/image";
 export function BentoGridDemo() {
   return (
     <>
-    <h2 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20 mb-16">
+    <h2 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 relative z-20 mb-16">
         Projects
       </h2>
-    <BentoGrid className="max-w-xl lg:max-w-4xl mx-auto">
+    <BentoGrid className="max-w-xl lg:max-w-4xl sm:mx-auto mx-4">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

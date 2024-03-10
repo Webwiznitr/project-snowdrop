@@ -10,10 +10,10 @@ const handleClick = () => {
 export function BackgroundGradientDemo() {
   return (
     <>
-    <h2 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20 mt-16 mb-16">
+    <h2 className="md:text-7xl text-3xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 relative z-20 mt-16 mb-16">
         Flagship Event
       </h2>
-    <div className="flex justify-center">
+    <div className="flex justify-center mx-4 sm:mx-auto">
       <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
         <Image
           src={`/image/HO.png`}
