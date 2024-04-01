@@ -87,12 +87,12 @@ const Faq = () => {
 
                 </section>
 
-                <ul className="flex flex-col gap-8 w-[75%] mx-auto relative z-20 hero-txt">
+                <ul className="flex flex-col gap-8 w-[75%] mx-auto relative  z-20 hero-txt">
                     {questions.map((q, index) => (
                         <li key={q.question}>
                             <div
-                                className={`${index !== -1 ? "rounded-[0.77075rem]  text-[#fff] bg-black opacity-80 inset-shadow " : ""
-                                    } gap-[0.3rem] flex flex-col`}
+                                className={`${index !== -1 ? "rounded-[0.77075rem]  text-[#fff] bg-[#000] opacity-80 inset-shadow " : ""
+                                    } gap-[0.3rem] flex flex-col `}
                             >
                                 <div
                                     className="flex flex-col justify-between cursor-pointer border-gray-700 "
@@ -109,19 +109,19 @@ const Faq = () => {
 
                                     <div className="text-start ml-4 " >
 
-                                        <div className="text-start ml-4   " >
-
-                                            <span className=" text-[#fff] font-bold">{`0${index + 1}`}</span>
-                                            <span className=" ml-6 text-[#fff]">{`${q.question}`}</span>
+                                        <div className="text-start ml-4  flex flex-row justify-between " >
+                                            <div className="flex flex-row">
+                                                <span className=" text-[#fff] font-bold">{`0${index + 1}`}</span>
+                                                <div> <span className=" ml-6 text-[#fff]">{`${q.question}`}</span></div></div>
 
                                             <div
 
-                                                className={`float-right   h-[full] bg-gray-700  relative  w-[4rem] transform ${question === index ? ' bg-[#A962FF]' : ''}`}
+                                                className={`float-right   h-[full] bg-black  relative   w-[full] transform ${question === index ? ' ' : ''}`}
                                             >
                                                 {question != index ? (
-                                                    <h1 className="text-white bg-[#A962FF] text-[2rem] flex justify-center">+</h1>
+                                                    <h1 className="text-white bg-[#A962FF] px-4 text-[2rem] flex justify-center">+</h1>
                                                 ) : (
-                                                    <h1 className="  text-[2rem] flex justify-center">-</h1>
+                                                    <h1 className="  text-[2rem] bg-gray-700 px-5 text-white flex justify-center">-</h1>
                                                 )}
 
                                             </div>
