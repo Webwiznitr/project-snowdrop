@@ -75,8 +75,8 @@ const Faq = () => {
                 <section className="flex flex-col   pb-[3rem]" id="faq">
 
                     <div className="flex flex-col w-[100%] mx-auto mt-[3rem] text-center  ">
-                        <div className="w-[100%] mx-auto textJS text-[3rem] text-white">
-                            FAQS
+                        <div className="w-[100%] mx-auto textJS text-[2.7rem] text-white">
+                            Frequentlty Asked Questions
                         </div>
                     </div>
 
@@ -116,9 +116,14 @@ const Faq = () => {
 
                                             <div
 
-                                                className={`float-right   h-[full] bg-gray-700  relative  w-[4rem] transform ${question === index ? 'rotate-180 , bg-[#A962FF]' : ''}`}
+                                                className={`float-right   h-[full] bg-gray-700  relative  w-[4rem] transform ${question === index ? ' bg-[#A962FF]' : ''}`}
                                             >
-                                                <h1 className="text-white text-[2rem] flex justify-center">+</h1>
+                                                {question != index ? (
+                                                    <h1 className="text-white bg-[#A962FF] text-[2rem] flex justify-center">+</h1>
+                                                ) : (
+                                                    <h1 className="  text-[2rem] flex justify-center">-</h1>
+                                                )}
+
                                             </div>
                                         </div>
 
