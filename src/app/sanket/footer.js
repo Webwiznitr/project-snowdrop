@@ -11,7 +11,7 @@ export function Footer() {
 
                 <div className="flex flex-row h-2/3 w-full bg-green border-b-[0.09rem] border-b-[#3f3f3f] ">
                     <div className="logo w-1/3 ">
-                        <div className="relative  lg:w-[55%] md:w-[55%] sm:w-[40%] w-[48%]  lg:h-[80%]  h-[65%] my-auto justify-center m-auto mt-[1rem]">
+                        <div className="relative  lg:w-[57%] md:w-[67%] sm:w-[75%] w-[80%]   h-[100%] my-auto justify-center m-auto ">
                             <Image
                                 src="/footer/webwizfooter.png"
                                 alt="GIF"
@@ -21,12 +21,12 @@ export function Footer() {
                             />
                         </div>
                     </div>
-                    <div className="text w-2/3 bg-[#0D0D0D] flex flex-row text-[#A962FF] justify-between flex-wrap sm:gap-8 gap-3 text-[1rem] sm:font-bold font-semibold ">
-                        <span className=" sm:translate-y-[40%]"><Link href={'/about'}>About</Link></span>
-                        <span className="sm:translate-y-[40%]"><Link href={'/project'}>Project</Link></span>
-                        <span className="sm:translate-y-[40%]"><Link href={'/team'}>Team</Link></span>
-                        <span className="sm:translate-y-[40%]"><Link href={'/events'}>Events</Link></span>
-                        <span className="sm:translate-y-[40%]"><Link href={'/contactus'}>Contact us</Link></span>
+                    <div className="text w-2/3 bg-[#0D0D0D] flex flex-row  text-[#A962FF] justify-between my-auto flex-wrap sm:gap-8 gap-3 sm:text-[1rem] text-[0.7rem] sm:font-bold font-semibold ">
+                        <span className=" "><Link href={'/about'}>About</Link></span>
+                        <span className=""><Link href={'/project'}>Project</Link></span>
+                        <span className=""><Link href={'/team'}>Team</Link></span>
+                        <span className=""><Link href={'/events'}>Events</Link></span>
+                        <span className=""><Link href={'/contactus'}>Contact us</Link></span>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ export function Footer() {
                                     alt="GIF"
                                     layout="fill"
                                     objectFit="contain"
-                                    className="rounded-lg"
+                                    className="rounded-lg float-right"
                                 /></Link>
                         </div>
 

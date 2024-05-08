@@ -109,17 +109,27 @@ const Faq = () => {
 
                                     <div className="text-start ml-4 " >
 
-                                        <div className="text-start ml-4  flex flex-row justify-between " >
-                                            <div className="flex flex-row">
-                                                <span className=" text-[#fff] font-bold">{`0${index + 1}`}</span>
-                                                <div> <span className=" ml-6 text-[#fff]">{`${q.question}`}</span></div></div>
+                                        <div className="text-start   flex flex-row justify-between " >
+                                            <div className=" text-[#fff] flex justify-center  w-[5%] font-bold mt-3">{`0${index + 1}`}</div>
 
+
+                                            <div className="flex w-[100%] flex-col"> <span className=" ml-6 text-[#fff]  mt-3"> {`${q.question}`}</span>
+                                                <div
+                                                    className={`text-start  transition-transform ease-out flex flex-row  duration-300 z-50 ${question === index
+                                                        ? "scale-100 translate-y-0   ml-6 py-[1rem] bg-opacity-0"
+                                                        : "scale-y-0 -translate-y-[50%] h-0"
+                                                        }`}
+
+                                                >
+
+                                                    <div className="flex ">{q.answer}</div>
+                                                </div></div>
                                             <div
 
                                                 className={`float-right   h-[full] bg-black  relative   w-[full] transform ${question === index ? ' ' : ''}`}
                                             >
                                                 {question != index ? (
-                                                    <h1 className="text-white bg-[#A962FF] px-4 text-[2rem] flex justify-center">+</h1>
+                                                    <h1 className="text-white bg-[#A962FF] px-4 text-[2rem]  h-full  flex justify-center"><span className=" ">+</span></h1>
                                                 ) : (
                                                     <h1 className="  text-[2rem] bg-gray-700 px-5 text-white flex justify-center">-</h1>
                                                 )}
@@ -129,15 +139,7 @@ const Faq = () => {
 
                                     </div>
 
-                                    <div
-                                        className={`text-start mx-auto transition-transform ease-out duration-300 z-50 ${question === index
-                                            ? "scale-100 translate-y-0 p-[2rem] bg-opacity-0"
-                                            : "scale-y-0 -translate-y-[50%] h-0"
-                                            }`}
 
-                                    >
-                                        {q.answer}
-                                    </div>
                                 </div >
                             </div>
                         </li >
