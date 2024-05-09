@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { FaBars } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
-function navbar() {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+function page() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [isIcon, setIsIcon] = useState(false);
 
     const toggleSidebar = () => {
@@ -34,7 +34,7 @@ function navbar() {
     
         {isSidebarOpen && (
     <div className='block md:hidden h-screen bg-black w-1/2 text-white z-10 mx-0 my-0'>
-        <button onClick={toggleSidebar} className='relative top-4 start-4'>{isIcon ? <FaBars size={30}/>:<IoClose size={30}/>}</button>
+        <button onClick={toggleSidebar} className='relative top-4 start-4'>{isIcon ? <IoClose size={30}/>:<FaBars size={30}/>}</button>
         <div className='list-none text-center h-full flex flex-col items-center justify-evenly mt-4'>
             <li className="side-item">About</li>
             <li className="side-item">Projects</li>
@@ -45,13 +45,15 @@ function navbar() {
     </div>
         )}
         {!isSidebarOpen && (
-    <div className='block md:hidden z-10 relative top-10 start-10'>
-      <button onClick={toggleSidebar}>{isIcon ? <FaBars/>:<IoClose/>}</button>
-      </div>
+          <div className='block md:hidden z-10 relative'>
+          <button onClick={toggleSidebar} className="absolute top-10 right-10">{isIcon ? <IoClose/> : <FaBars/>}</button>
+        </div>
+        
+
         )}
     
     </>
     )
 }
 
-export default navbar
+export default page
