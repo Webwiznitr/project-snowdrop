@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import EventsPage from './events';
 import Team from './team';
