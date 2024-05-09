@@ -1,17 +1,17 @@
 "use client"
-import React from 'react'
-import about from './About'
-import gallery from './Gallery'
+import React from 'react';
+import about from './About';
+import gallery from './Gallery';
 
 function page() {
   return (
     <>
     <div>
-      </About>
-      </Gallery>
+      <About />
+      <Gallery />
     </div>
     </>
   )
 }
 
-export default page
+export default page;
