@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import about from './About';
-import gallery from './Gallery';
+import About from './About';
+import Gallery from './Gallery';
 
 function page() {
   return (

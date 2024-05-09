@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 
-function about() {
+function About() {
     return (<>
         <div className='flex justify-center flex-wrap'>
             <div className=' border-solid border-2 pt-2 pb-2 w-32 text-center m-10 rounded-3xl' style={{ borderColor: "#8A67B5" }}>About us</div>
@@ -18,4 +18,4 @@ function about() {
     )
 }
 
-export default about;
+export default About;
