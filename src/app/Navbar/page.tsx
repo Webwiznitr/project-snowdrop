@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { FaBars } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
-function page() {
+function Page() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [isIcon, setIsIcon] = useState(false);
 
