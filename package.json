@@ -21,6 +21,7 @@
     "react-element-to-jsx-string": "^15.0.0",
     "react-slick": "^0.30.2",
     "scroll": "^3.0.1",
+    "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
